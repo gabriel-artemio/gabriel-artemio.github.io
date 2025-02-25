@@ -1,4 +1,4 @@
-const repo = "SEU_USUARIO/SEU_REPOSITORIO"; // Exemplo: "gabrielhenrique/my-json-db"
+const repo = "gabriel-artemio/gabriel-artemio.github.io"; // Exemplo: "gabrielhenrique/my-json-db"
 const filePath = "data.json";
 const token = "SEU_GITHUB_TOKEN"; // ⚠️ NÃO EXIBA ISSO PUBLICAMENTE
 
