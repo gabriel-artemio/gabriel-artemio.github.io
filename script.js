@@ -1,7 +1,6 @@
 const repo = "gabriel-artemio/gabriel-artemio.github.io"; // Exemplo: "gabrielhenrique/my-json-db"
 const filePath = "data.json";
-//const token = "SEU_GITHUB_TOKEN"; // ⚠️ NÃO EXIBA ISSO PUBLICAMENTE
-const token = "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";
+const token = "SEU_GITHUB_TOKEN"; // ⚠️ NÃO EXIBA ISSO PUBLICAMENTE
 
 // Obtém o SHA do arquivo (necessário para atualizar o JSON)
 async function getFileSha() {
