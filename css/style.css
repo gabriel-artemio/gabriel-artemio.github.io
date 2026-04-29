@@ -36,6 +36,11 @@ body {
             margin: 20px auto;
         }
 
+        h5 {
+            color: white;
+            font-weight: 'bold';
+        }
+
         .badge-tech {
             margin: 5px;
             padding: 8px 12px;
