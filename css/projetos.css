@@ -1,0 +1,430 @@
+/* ========================================
+   PROJETOS PESSOAIS
+======================================== */
+
+.projects-hero {
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 100px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-command {
+    color: var(--primary);
+
+    font-family: monospace;
+
+    font-size: 1rem;
+}
+
+.projects-hero h1 {
+    font-size: clamp(4rem, 9vw, 8rem);
+
+    font-weight: 800;
+
+    line-height: 0.95;
+
+    margin: 25px 0;
+}
+
+.projects-hero h1 span {
+    color: var(--primary);
+}
+
+.projects-hero p {
+    max-width: 650px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+}
+
+.scroll-indicator {
+    margin-top: 70px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    color: var(--text-secondary);
+
+    font-family: monospace;
+
+    font-size: 0.75rem;
+}
+
+.scroll-indicator i {
+    color: var(--primary);
+
+    animation: scrollArrow 1.5s infinite;
+}
+
+@keyframes scrollArrow {
+
+    0% {
+        transform: translateY(-5px);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translateY(5px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-5px);
+        opacity: 0.4;
+    }
+
+}
+
+
+/* ========================================
+   PROJETO
+======================================== */
+
+.personal-project {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 0;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.personal-project:nth-child(even) {
+    background: rgba(13, 23, 40, 0.45);
+}
+
+
+/* Número gigante */
+
+.project-background-number {
+    position: absolute;
+
+    right: -30px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 18rem;
+
+    font-weight: 900;
+
+    color: rgba(56, 189, 248, 0.025);
+
+    pointer-events: none;
+
+    line-height: 1;
+}
+
+
+/* ========================================
+   IMAGEM
+======================================== */
+
+.parallax-container {
+    position: relative;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    border: 1px solid var(--border);
+
+    background: var(--card);
+}
+
+.project-image {
+    position: absolute;
+
+    inset: -50px;
+
+    will-change: transform;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 17, 32, 0.15),
+            rgba(8, 17, 32, 0.45)
+        );
+
+    pointer-events: none;
+}
+
+.image-label {
+    position: absolute;
+
+    left: 25px;
+    bottom: 20px;
+
+    padding: 8px 14px;
+
+    background: rgba(8, 17, 32, 0.85);
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    color: var(--primary);
+
+    font-family: monospace;
+
+    font-size: 0.75rem;
+}
+
+
+/* ========================================
+   CONTEÚDO
+======================================== */
+
+.personal-project-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+.project-label {
+    color: var(--primary);
+
+    font-family: monospace;
+
+    font-size: 0.85rem;
+
+    text-transform: uppercase;
+}
+
+.personal-project-content h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    margin: 15px 0 25px;
+}
+
+.personal-project-content h2 span {
+    color: var(--primary);
+}
+
+.project-description {
+    color: var(--text-secondary);
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    max-width: 520px;
+}
+
+
+/* ========================================
+   TECNOLOGIAS
+======================================== */
+
+.technology-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.technology-list span {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 6px;
+
+    color: var(--text-secondary);
+
+    font-family: monospace;
+
+    font-size: 0.8rem;
+
+    transition: 0.3s;
+}
+
+.technology-list span i {
+    color: var(--primary);
+
+    font-size: 1rem;
+}
+
+.technology-list span:hover {
+    border-color: var(--primary);
+
+    color: var(--primary);
+
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   LINKS
+======================================== */
+
+.project-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 35px;
+}
+
+
+/* ========================================
+   FINAL
+======================================== */
+
+.projects-end {
+    padding: 150px 0;
+
+    text-align: center;
+}
+
+.projects-end span {
+    color: var(--primary);
+
+    font-family: monospace;
+}
+
+.projects-end h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+
+    font-weight: 800;
+
+    margin: 20px 0;
+}
+
+.projects-end h2 strong {
+    display: block;
+
+    color: var(--primary);
+}
+
+.projects-end p {
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   RESPONSIVO
+======================================== */
+
+@media (max-width: 991px) {
+
+    .projects-hero {
+        min-height: 75vh;
+    }
+
+    .personal-project {
+        min-height: auto;
+
+        padding: 100px 0;
+    }
+
+    .parallax-container {
+        height: 400px;
+    }
+
+    .project-background-number {
+        font-size: 12rem;
+
+        top: 30%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .projects-hero {
+        text-align: center;
+    }
+
+    .projects-hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .scroll-indicator {
+        justify-content: center;
+    }
+
+    .personal-project {
+        text-align: center;
+    }
+
+    .personal-project-content {
+        margin-top: 20px;
+    }
+
+    .project-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .technology-list {
+        justify-content: center;
+    }
+
+    .project-links {
+        justify-content: center;
+    }
+
+    .parallax-container {
+        height: 300px;
+    }
+
+    .project-reverse .row {
+        flex-direction: column-reverse;
+    }
+
+}
