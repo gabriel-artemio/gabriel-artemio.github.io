@@ -812,3 +812,39 @@ footer {
         margin-bottom: 35px;
     }
 }
+
+.projects-end {
+    padding: 150px 0;
+
+    text-align: center;
+}
+
+.projects-end span {
+    color: var(--primary);
+
+    font-family: monospace;
+}
+
+.projects-end h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+
+    font-weight: 800;
+
+    margin: 20px 0;
+}
+
+.projects-end h2 strong {
+    display: block;
+
+    color: var(--primary);
+}
+
+.projects-end p {
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+}
